@@ -6,11 +6,12 @@ import Header3 from './header3';
 const RandomHeader = () => {
     const [randomNumber, setRandomNumber] = useState(null);
 
-    const min = 1; // Минимальное значение
-    const max = 3; // Максимальное значение
+    //const min = 1; // Минимальное значение
+   // const max = 3; // Максимальное значение
 
     const generateRandomNumber = () => {
-        const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+        //const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+        const randomNum = Math.floor(Math.random() * 3) + 1;
         setRandomNumber(randomNum);
     };
 
