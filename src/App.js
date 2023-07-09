@@ -1,26 +1,17 @@
 import './App.css';
 
-import React from 'react';
-import RandomHeader from './templates/Header/RandomHeader';
+import React, { useState, useEffect } from "react";
+import { appWithTranslation } from 'next-translate';
+import HeaderComponents from './templates/Header/HeaderComponents';
+import BodyComponents from './templates/Body/BodyComponents';
+import FooterComponents from './templates/Footer/FooterComponents';
 
-const HomePage = () => {
-    return (
-        <div>
-            <h1>My site</h1>
-            <RandomHeader />
-        </div>
-    );
-};
 
-export default HomePage;
-
-/*import React, { useState, useEffect } from "react";
-
-const RandomNumberGenerator = () => {
+const GenerateNum = () => {
     const [randomNumber, setRandomNumber] = useState(null);
 
-    const min = 1; // Минимальное значение
-    const max = 100; // Максимальное значение
+    const min = 0;
+    const max = 4;
 
     const generateRandomNumber = () => {
         const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -31,15 +22,38 @@ const RandomNumberGenerator = () => {
         generateRandomNumber();
     }, []);
 
+
+    return randomNumber
+};
+
+
+
+const HomePage = () => {
+
+
+    const randomNumHeader = GenerateNum()
+    const randomNumBody = GenerateNum()
+    const randomNumFooter = GenerateNum()
+
+    console.log(randomNumHeader)
+    console.log(randomNumBody)
+    console.log(randomNumFooter)
+
     return (
         <div>
-            <button onClick={generateRandomNumber}>Generate</button>
-            {randomNumber && <p>Random number: {randomNumber}</p>}
+            <HeaderComponents randomIndex={randomNumHeader} />
+            <BodyComponents randomIndex={randomNumBody} />
+            <FooterComponents randomIndex={randomNumFooter} />
         </div>
+
+       
     );
 };
 
-export default RandomNumberGenerator;*/
+export default HomePage;
+
+
+
 
 
 
