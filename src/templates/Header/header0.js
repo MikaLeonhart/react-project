@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Header0 = () => {
+const Header0 = ({siteName}) => {
     return (
         <nav className="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
             <div className="container">
                 <a className="navbar-brand d-md-none" href="#">
                     <svg className="bi" width="24" height="24"></svg>
-                    Aperture
+                    {siteName }
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="#offcanvas" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>

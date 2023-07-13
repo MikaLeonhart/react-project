@@ -3,7 +3,10 @@
     "",
     "\\public",
     "\\src",
-    "\\src\\templates"
+    "\\src\\templates",
+    "\\src\\templates\\Footer",
+    "\\src\\templates\\Windows"
   ],
+  "SelectedNode": "\\src\\templates\\Footer\\footer0.js",
   "PreviewInSolutionExplorer": false
 }
