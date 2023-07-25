@@ -1,7 +1,11 @@
 import React from 'react';
 
-const Header1 = () => {
+const Header1 = ({ siteName }) => {
     return (
+        <>
+        <head>
+            <title>{siteName}</title>
+        </head>
         <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">Fixed navbar</a>
@@ -26,7 +30,8 @@ const Header1 = () => {
                     </form>
                 </div>
             </div>
-        </nav>
+            </nav>
+        </>
     );
 };
 

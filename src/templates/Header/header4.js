@@ -1,7 +1,11 @@
 import React from 'react';
 
-const Header4 = () => {
+const Header4 = ({ siteName }) => {
     return (
+        <>
+        <head>
+            <title>{siteName}</title>
+        </head>
         <div className='container'>
             <header className="pb-3 mb-4 border-bottom">
                 <a href="/" className="d-flex align-items-center text-body-emphasis text-decoration-none">
@@ -9,7 +13,8 @@ const Header4 = () => {
                     <span className="fs-4">Jumbotron example</span>
                 </a>
             </header>
-        </div>
+            </div>
+        </>
     );
 };
 

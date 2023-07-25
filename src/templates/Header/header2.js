@@ -1,7 +1,11 @@
 import React from 'react';
 
-const Header2 = () => {
+const Header2 = ({ siteName }) => {
     return (
+         <>
+        <head>
+            <title>{siteName}</title>
+        </head>
         <div className="container">
             <header className="border-bottom lh-1 py-3">
                 <div className="row flex-nowrap justify-content-between align-items-center">
@@ -36,7 +40,8 @@ const Header2 = () => {
                     <a className="nav-item nav-link link-body-emphasis" href="#">Travel</a>
                 </nav>
             </div>
-        </div>
+            </div>
+        </>
     );
 };
 

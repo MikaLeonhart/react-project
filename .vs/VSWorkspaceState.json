@@ -4,9 +4,9 @@
     "\\public",
     "\\src",
     "\\src\\templates",
-    "\\src\\templates\\Footer",
+    "\\src\\templates\\Header",
     "\\src\\templates\\Windows"
   ],
-  "SelectedNode": "\\src\\templates\\Footer\\footer0.js",
+  "SelectedNode": "\\src\\templates\\Windows\\MainWindow.js",
   "PreviewInSolutionExplorer": false
 }
